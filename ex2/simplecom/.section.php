@@ -1,0 +1,6 @@
+<?
+$sSectionName = "simplecom";
+$arDirProperties = Array(
+
+);
+?>

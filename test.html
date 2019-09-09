@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+<script type="text/javascript">
+    // Задача 1
+    // Реализовать функцию, которая находит разницу в массивах и возвращает ее
+    // Порядрк возвращаемых элментов не важен
+
+    function arrayDifference(arr1, arr2) {
+
+        let arResult = [];
+        let main;
+        let additionaly;
+
+        if(arr1.length > arr2.length) {
+            main = arr1;
+        } else {
+            additionaly = arr2;
+        }
+
+
+
+        arr1.forEach((item, index) => {
+            arr2.forEach((item2, index2) => {
+                if(item == item2) {
+                    arResult.push(index);
+                }
+            });
+        });
+
+        for(let i = 0; i < len; i++) {
+            if(arResult.indexOf(i) < 0) {
+                console.log(i);
+            }
+        }
+
+    }
+
+    arrayDifference(['javascript', 'is', 'awesome'], ['javascript', 'awesome'])
+    // ['is']
+    // arrayDifference([1, 2, 3, 4, 5], [3, 4, 2, 7])
+    // [1, 5, 7]
+</script>
+</body>
+</html>
